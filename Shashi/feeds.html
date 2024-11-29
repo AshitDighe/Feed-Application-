@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Feeds</title>
+    <link rel="stylesheet" href="feeds.css">
+</head>
+<body>
+    <div class="feeds-container">
+        <h2>Your Feeds</h2>
+
+        <div class="post-options">
+            <button onclick="showCreatePostForm()">Create New Post</button>
+            <button onclick="viewMyPosts()">View My Posts</button>
+            <button onclick="viewOtherPosts()">View Other Users' Posts</button>
+        </div>
+
+        <!-- Create Post Form -->
+        <div id="create-post-form" class="form-container" style="display: none;">
+            <h3>Create New Post</h3>
+            <textarea id="new-post" placeholder="Enter your post here..." rows="4" required></textarea>
+            <button onclick="createPost()">Create Post</button>
+            <button onclick="hideCreatePostForm()">Cancel</button>
+        </div>
+
+        <!-- My Posts Section -->
+        <div id="my-posts-section" class="posts-section" style="display: none;">
+            <h3>My Posts</h3>
+            <div id="my-posts-list"></div>
+        </div>
+
+        <!-- Other Users' Posts Section -->
+        <!-- Other Users' Posts Section -->
+<div id="other-posts-section" class="posts-section" style="display: none;">
+    <h3>Other Users' Posts</h3>
+    <div id="other-posts-list"></div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
